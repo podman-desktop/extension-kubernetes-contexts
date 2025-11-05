@@ -85,7 +85,7 @@ export class ContextsExtension {
   }
 
   private async createWebview(): Promise<WebviewPanel> {
-    const panel = window.createWebviewPanel('kubernetes-contexts', 'Kubernetes', {
+    const panel = window.createWebviewPanel('kubernetes-contexts', 'Contexts', {
       localResourceRoots: [Uri.joinPath(this.#extensionContext.extensionUri, 'media')],
     });
     this.#extensionContext.subscriptions.push(panel);
