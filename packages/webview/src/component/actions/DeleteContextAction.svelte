@@ -18,4 +18,4 @@ async function deleteContext(name: string): Promise<void> {
 }
 </script>
 
-<IconButton title="Delete Context" icon={faTrash} onClick={(): Promise<void> => deleteContext(name)} />
+<IconButton title="Delete Context" icon={faTrash} onClick={(): Promise => deleteContext(name)} />

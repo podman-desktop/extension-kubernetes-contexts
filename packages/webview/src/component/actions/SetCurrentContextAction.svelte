@@ -18,7 +18,4 @@ async function setCurrentContext(name: string): Promise<void> {
 }
 </script>
 
-<IconButton
-  title="Set as Current Context"
-  icon={faRightToBracket}
-  onClick={(): Promise<void> => setCurrentContext(name)} />
+<IconButton title="Set as Current Context" icon={faRightToBracket} onClick={(): Promise => setCurrentContext(name)} />
