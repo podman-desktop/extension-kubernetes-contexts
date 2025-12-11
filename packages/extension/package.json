@@ -24,7 +24,7 @@
     "@kubernetes-contexts/rpc": "workspace:*",
     "@kubernetes-contexts/channels": "workspace:*",
     "@podman-desktop/api": "1.24.1",
-    "@types/node": "^24",
+    "@types/node": "^25",
     "@typescript-eslint/eslint-plugin": "^8.49.0",
     "@typescript-eslint/parser": "^8.30.1",
     "@vitest/coverage-v8": "^4.0.14",
