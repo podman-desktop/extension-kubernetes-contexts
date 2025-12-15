@@ -85,8 +85,8 @@ importers:
         specifier: ^3.7.1
         version: 3.7.4
       prettier-plugin-svelte:
-        specifier: ^3.3.3
-        version: 3.4.0(prettier@3.7.4)(svelte@5.45.10)
+        specifier: ^3.4.1
+        version: 3.4.1(prettier@3.7.4)(svelte@5.45.10)
       svelte:
         specifier: 5.45.10
         version: 5.45.10
@@ -276,8 +276,8 @@ importers:
         specifier: ^3.7.1
         version: 3.7.4
       prettier-plugin-svelte:
-        specifier: ^3.3.3
-        version: 3.4.0(prettier@3.7.4)(svelte@5.45.10)
+        specifier: ^3.4.1
+        version: 3.4.1(prettier@3.7.4)(svelte@5.45.10)
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -3246,8 +3246,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-svelte@3.4.0:
-    resolution: {integrity: sha512-pn1ra/0mPObzqoIQn/vUTR3ZZI6UuZ0sHqMK5x2jMLGrs53h0sXhkVuDcrlssHwIMk7FYrMjHBPoUSyyEEDlBQ==}
+  prettier-plugin-svelte@3.4.1:
+    resolution: {integrity: sha512-xL49LCloMoZRvSwa6IEdN2GV6cq2IqpYGstYtMT+5wmml1/dClEoI0MZR78MiVPpu6BdQFfN0/y73yO6+br5Pg==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
@@ -3671,9 +3671,6 @@ packages:
   tailwind-csstree@0.1.4:
     resolution: {integrity: sha512-FzD187HuFIZEyeR7Xy6sJbJll2d4SybS90satC8SKIuaNRC05CxMvdzN7BUsfDQffcnabckRM5OIcfArjsZ0mg==}
     engines: {node: '>=18.18'}
-
-  tailwindcss@4.1.17:
-    resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
 
   tailwindcss@4.1.18:
     resolution: {integrity: sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw==}
@@ -7314,7 +7311,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-svelte@3.4.0(prettier@3.7.4)(svelte@5.45.10):
+  prettier-plugin-svelte@3.4.1(prettier@3.7.4)(svelte@5.45.10):
     dependencies:
       prettier: 3.7.4
       svelte: 5.45.10
@@ -7751,8 +7748,6 @@ snapshots:
       '@pkgr/core': 0.2.9
 
   tailwind-csstree@0.1.4: {}
-
-  tailwindcss@4.1.17: {}
 
   tailwindcss@4.1.18: {}
 
