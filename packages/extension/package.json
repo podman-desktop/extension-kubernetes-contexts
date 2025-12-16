@@ -24,7 +24,7 @@
     "@kubernetes-contexts/rpc": "workspace:*",
     "@kubernetes-contexts/channels": "workspace:*",
     "@podman-desktop/api": "1.24.2",
-    "@podman-desktop/kubernetes-dashboard-extension-api": "0.2.0-next.202512131506-f6c0d06",
+    "@podman-desktop/kubernetes-dashboard-extension-api": "0.2.0-next.202512161041-301d89d",
     "@types/node": "^24",
     "@typescript-eslint/eslint-plugin": "^8.49.0",
     "@typescript-eslint/parser": "^8.30.1",
