@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@kubernetes/client-node": "^1.4.0",
-    "inversify": "^7.9.1",
+    "inversify": "^7.10.8",
     "js-yaml": "^4.1.0",
     "reflect-metadata": "^0.2.2"
   }
