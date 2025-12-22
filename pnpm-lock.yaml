@@ -143,8 +143,8 @@ importers:
         specifier: 1.24.2
         version: 1.24.2
       '@podman-desktop/kubernetes-dashboard-extension-api':
-        specifier: 0.2.0-next.202512190736-9f77685
-        version: 0.2.0-next.202512190736-9f77685
+        specifier: 0.2.0-next.202512191641-928252c
+        version: 0.2.0-next.202512191641-928252c
       '@types/node':
         specifier: ^24
         version: 24.10.4
@@ -820,8 +820,8 @@ packages:
   '@podman-desktop/api@1.24.2':
     resolution: {integrity: sha512-k1q+FpLtuotjsOkiXUlk7EO2FmRsSAehnyyFTZj/9fHUtYVkit7vy4eAHRvt9KqF3Xujm7jqHFNkuJtfdF01kw==}
 
-  '@podman-desktop/kubernetes-dashboard-extension-api@0.2.0-next.202512190736-9f77685':
-    resolution: {integrity: sha512-xDmFgZ78GAn3+BGpSxKg/4UWt+/0TB/izMR3DLQcg0oRZakwJwUXmtF/MT7ynHUqn6Q4N7/8iRH8bUHDer6R7A==}
+  '@podman-desktop/kubernetes-dashboard-extension-api@0.2.0-next.202512191641-928252c':
+    resolution: {integrity: sha512-dVjiXggF5yb7DAyW5q/t0bK44ZGpwPun7Eqn7+FleOl8Cj44Zs8z8CY23GCTPS75SncGiqI6mAO6MC/FY8oQNg==}
 
   '@podman-desktop/ui-svelte@1.24.2':
     resolution: {integrity: sha512-HsDc0VVCbwHZGlgTScCThLVdRQaYt/coL/+PrTjsbhwb4ECr41f4xfR+QZBuxbjowJurrUzpxgagfO1//U008Q==}
@@ -4530,7 +4530,7 @@ snapshots:
 
   '@podman-desktop/api@1.24.2': {}
 
-  '@podman-desktop/kubernetes-dashboard-extension-api@0.2.0-next.202512190736-9f77685': {}
+  '@podman-desktop/kubernetes-dashboard-extension-api@0.2.0-next.202512191641-928252c': {}
 
   '@podman-desktop/ui-svelte@1.24.2(svelte-fa@4.0.4(svelte@5.46.0))(svelte@5.46.0)':
     dependencies:
