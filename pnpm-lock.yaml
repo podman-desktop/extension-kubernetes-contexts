@@ -234,8 +234,8 @@ importers:
         specifier: workspace:*
         version: link:../rpc
       '@podman-desktop/ui-svelte':
-        specifier: 1.24.2
-        version: 1.24.2(svelte-fa@4.0.4(svelte@5.48.2))(svelte@5.48.2)
+        specifier: 1.25.1
+        version: 1.25.1(svelte-fa@4.0.4(svelte@5.48.2))(svelte@5.48.2)
       '@podman-desktop/webview-api':
         specifier: 1.25.1
         version: 1.25.1
@@ -632,11 +632,11 @@ packages:
       '@exodus/crypto':
         optional: true
 
-  '@floating-ui/core@1.7.3':
-    resolution: {integrity: sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==}
+  '@floating-ui/core@1.7.4':
+    resolution: {integrity: sha512-C3HlIdsBxszvm5McXlB8PeOEWfBhcGBTZGkGlWc2U0KFY5IwG5OQEuQ8rq52DZmcHDlPLd+YFBK+cZcytwIFWg==}
 
-  '@floating-ui/dom@1.7.4':
-    resolution: {integrity: sha512-OOchDgh4F2CchOX94cRVqhvy7b3AFb+/rQXyswmzmGakRfkMgoWVjfnLWkRirfLEfuD4ysVW16eXzwt3jHIzKA==}
+  '@floating-ui/dom@1.7.5':
+    resolution: {integrity: sha512-N0bD2kIPInNHUHehXhMke1rBGs1dwqvC9O9KYMyyjK7iXt7GAhnro7UlcuYcGdS/yYOlq0MAVgrow8IbWJwyqg==}
 
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
@@ -917,8 +917,8 @@ packages:
   '@podman-desktop/kubernetes-dashboard-extension-api@0.3.0':
     resolution: {integrity: sha512-OPuwDhP0vToutODg7NjWdYQipTDSyRylhOWU5ZXQDElQrDmttgR4rCdhZfdftpfWyw2dP0UequGXK3KzGqq/rQ==}
 
-  '@podman-desktop/ui-svelte@1.24.2':
-    resolution: {integrity: sha512-HsDc0VVCbwHZGlgTScCThLVdRQaYt/coL/+PrTjsbhwb4ECr41f4xfR+QZBuxbjowJurrUzpxgagfO1//U008Q==}
+  '@podman-desktop/ui-svelte@1.25.1':
+    resolution: {integrity: sha512-O+0evQu+DtQSDi/pksyRxxj/Iv4OCtcyDa4pQqvOzhL5H73IQdwLCOjZ2KFA1xMVqMzCFvGMDHbGRSP9WyFaMg==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
       svelte-fa: ^4.0.0
@@ -4417,13 +4417,13 @@ snapshots:
 
   '@exodus/bytes@1.6.0': {}
 
-  '@floating-ui/core@1.7.3':
+  '@floating-ui/core@1.7.4':
     dependencies:
       '@floating-ui/utils': 0.2.10
 
-  '@floating-ui/dom@1.7.4':
+  '@floating-ui/dom@1.7.5':
     dependencies:
-      '@floating-ui/core': 1.7.3
+      '@floating-ui/core': 1.7.4
       '@floating-ui/utils': 0.2.10
 
   '@floating-ui/utils@0.2.10': {}
@@ -4761,9 +4761,9 @@ snapshots:
 
   '@podman-desktop/kubernetes-dashboard-extension-api@0.3.0': {}
 
-  '@podman-desktop/ui-svelte@1.24.2(svelte-fa@4.0.4(svelte@5.48.2))(svelte@5.48.2)':
+  '@podman-desktop/ui-svelte@1.25.1(svelte-fa@4.0.4(svelte@5.48.2))(svelte@5.48.2)':
     dependencies:
-      '@floating-ui/dom': 1.7.4
+      '@floating-ui/dom': 1.7.5
       '@fortawesome/fontawesome-free': 7.1.0
       '@fortawesome/free-brands-svg-icons': 7.1.0
       '@fortawesome/free-regular-svg-icons': 7.1.0
