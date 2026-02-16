@@ -35,7 +35,7 @@ function generatePreviewName(name: string): string {
   }
 
   let counter = 1;
-  let newName = '';
+  let newName: string;
   for (;;) {
     newName = `${name}-${counter}`;
     if (!existingNames.includes(newName)) {
