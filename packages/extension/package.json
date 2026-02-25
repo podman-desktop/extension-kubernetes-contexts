@@ -2,7 +2,7 @@
   "name": "kubernetes-contexts",
   "displayName": "Kubernetes Contexts",
   "description": "Podman Desktop extension allowing to manage Kubernetes contexts",
-  "version": "0.1.0-next",
+  "version": "0.2.0-next",
   "icon": "icon.png",
   "publisher": "podman-desktop",
   "license": "Apache-2.0",
