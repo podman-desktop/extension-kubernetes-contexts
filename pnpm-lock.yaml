@@ -146,8 +146,8 @@ importers:
         specifier: workspace:*
         version: link:../rpc
       '@podman-desktop/api':
-        specifier: 1.26.1
-        version: 1.26.1
+        specifier: 1.26.2
+        version: 1.26.2
       '@podman-desktop/kubernetes-dashboard-extension-api':
         specifier: 0.5.0
         version: 0.5.0
@@ -916,8 +916,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@podman-desktop/api@1.26.1':
-    resolution: {integrity: sha512-mp6+UgOY/lzAy6ieeyWL9xPEdYiYEig5a5vLbmDFZu7/y/uihvxUQQ75VGZQeq37I2xpDztll95fY/NdypoZ1w==}
+  '@podman-desktop/api@1.26.2':
+    resolution: {integrity: sha512-LE8uo8PsyUG7gfrg0IW/Eib6SeZn717usJSwiuzpDMTSZJCTwlaXDeEADxMXLfsu6V9OKjZtgwJ7SAVzaeTV7A==}
 
   '@podman-desktop/kubernetes-dashboard-extension-api@0.5.0':
     resolution: {integrity: sha512-XlyvBGo2iDGVFEVEzWSmHozoV4yopxRy4aLeGaGX5/V5OvYy8HLduaG/Rhnjb09m/fhdkKKWmCSct5Pi1HkfmQ==}
@@ -4830,7 +4830,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@podman-desktop/api@1.26.1': {}
+  '@podman-desktop/api@1.26.2': {}
 
   '@podman-desktop/kubernetes-dashboard-extension-api@0.5.0': {}
 
