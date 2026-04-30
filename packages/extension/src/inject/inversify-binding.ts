@@ -52,15 +52,15 @@ export class InversifyBinding {
     this.#container.bind(ExtensionContextSymbol).toConstantValue(this.#extensionContext);
     this.#container.bind(TelemetryLoggerSymbol).toConstantValue(this.#telemetryLogger);
 
-    await this.#container.load(managersModule);
-    await this.#container.load(dispatchersModule);
+    this.#container.load(managersModule);
+    this.#container.load(dispatchersModule);
 
     return this.#container;
   }
 
   async dispose(): Promise<void> {
     if (this.#container) {
-      await this.#container.unbindAll();
+      this.#container.unbindAll();
     }
   }
 }

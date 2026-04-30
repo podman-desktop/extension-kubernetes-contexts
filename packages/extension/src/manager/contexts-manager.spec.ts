@@ -44,7 +44,7 @@ beforeEach(async () => {
 
   const inversifyBinding = new InversifyBinding({} as RpcExtension, {} as ExtensionContext, telemetryLoggerMock);
   container = await inversifyBinding.initBindings();
-  (await container.rebind(DashboardApiManager)).toConstantValue(dashboardApiManagerMock);
+  container.rebind(DashboardApiManager).toConstantValue(dashboardApiManagerMock);
 });
 
 vi.mock(import('node:fs/promises'));
