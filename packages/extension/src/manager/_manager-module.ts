@@ -27,7 +27,7 @@ import { DashboardApiManager } from '/@/manager/dashboard-api-manager';
 
 const managersModule = new ContainerModule(options => {
   options.bind<ContextsManager>(ContextsManager).toSelf().inSingletonScope();
-  options.bind<ContextsManager>(ChannelSubscriber).toSelf().inSingletonScope();
+  options.bind<ChannelSubscriber>(ChannelSubscriber).toSelf().inSingletonScope();
   options.bind<Dispatcher>(Dispatcher).toSelf().inSingletonScope();
   options.bind<DashboardStatesManager>(DashboardStatesManager).toSelf().inSingletonScope();
   options.bind<OpenDialogApiImpl>(OpenDialogApiImpl).toSelf().inSingletonScope();

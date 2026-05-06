@@ -59,8 +59,8 @@ let dispatcher: Dispatcher;
 beforeAll(async () => {
   const inversifyBinding = new InversifyBinding(rpcExtension, extensionContext, telemetryLogger);
   container = await inversifyBinding.initBindings();
-  (await container.rebind(ContextsManager)).toConstantValue(contextsManagerMock);
-  (await container.rebind(ChannelSubscriber)).toConstantValue(channelSubscriberMock);
+  (await container.rebindAsync(ContextsManager)).toConstantValue(contextsManagerMock);
+  (await container.rebindAsync(ChannelSubscriber)).toConstantValue(channelSubscriberMock);
   container.bind(DispatcherObject).toConstantValue(channel1DispatcherMock);
   container.bind(DispatcherObject).toConstantValue(channel2DispatcherMock);
 });

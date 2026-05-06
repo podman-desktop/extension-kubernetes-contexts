@@ -43,7 +43,7 @@ beforeEach(async () => {
 
   const inversifyBinding = new InversifyBinding({} as RpcExtension, {} as ExtensionContext, {} as TelemetryLogger);
   container = await inversifyBinding.initBindings();
-  (await container.rebind(DashboardApiManager)).toConstantValue(dashboardApiManagerMock);
+  (await container.rebindAsync(DashboardApiManager)).toConstantValue(dashboardApiManagerMock);
 });
 
 describe('dashboard extension is not installed', () => {
