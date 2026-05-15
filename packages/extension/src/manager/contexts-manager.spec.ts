@@ -366,6 +366,7 @@ test('deleteContext should show error notification if it fails', async () => {
   vi.mocked(kubernetes.getKubeconfig).mockImplementation(() => {
     throw new Error('error getting kubeconfig path');
   });
+  vi.mocked(window.showInformationMessage).mockResolvedValue('Yes');
   await contextsManager.deleteContext('context1');
   expect(window.showNotification).toHaveBeenCalledWith({
     title: 'Error deleting context',
@@ -376,7 +377,7 @@ test('deleteContext should show error notification if it fails', async () => {
   expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
 });
 
-test('deleteContext rewrites file with new current context, no confirmation needed for non current context', async () => {
+test('deleteContext for non-current context asks for confirmation and deletes on Yes', async () => {
   const kubeConfigPath = '/path/to/kube/config';
   vol.fromJSON({
     [kubeConfigPath]: '{}',
@@ -445,6 +446,8 @@ test('deleteContext rewrites file with new current context, no confirmation need
   kubeConfig.loadFromString(kubeconfigFileContent);
   await contextsManager.update(kubeConfig);
 
+  vi.mocked(window.showInformationMessage).mockResolvedValue('Yes');
+
   await contextsManager.deleteContext('context1');
 
   const fsScreenshot = vol.toJSON();
@@ -452,8 +455,74 @@ test('deleteContext rewrites file with new current context, no confirmation need
   const kubeconfigFileNew = new KubeConfig();
   kubeconfigFileNew.loadFromString(kubeconfigFile ?? '');
   expect(kubeconfigFileNew.getContexts()).toHaveLength(2);
-  expect(window.showInformationMessage).not.toHaveBeenCalled();
+  expect(window.showInformationMessage).toHaveBeenCalledWith(
+    'Are you sure you want to delete context "context1"?',
+    'Yes',
+    'Cancel',
+  );
   expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
+});
+
+test('deleteContext for non-current context does nothing if refused', async () => {
+  const kubeConfigPath = '/path/to/kube/config';
+  vol.fromJSON({
+    [kubeConfigPath]: '{}',
+  });
+  vi.mocked(kubernetes.getKubeconfig).mockReturnValue({
+    path: kubeConfigPath,
+  } as Uri);
+  const contextsManager = container.get(ContextsManager);
+  const kubeConfig = new KubeConfig();
+  const kubeconfigFileContent = `{
+      clusters: [
+        {
+          name: 'cluster1',
+          cluster: {
+            server: 'https://cluster1.example.com',
+          },
+        },
+        {
+          name: 'cluster2',
+          cluster: {
+            server: 'https://cluster2.example.com',
+          },
+        },
+      ],
+      users: [
+        {
+          name: 'user1',
+        },
+        {
+          name: 'user2',
+        },
+      ],
+      contexts: [
+        {
+          name: 'context1',
+          context: {
+            cluster: 'cluster1',
+            user: 'user1',
+          },
+        },
+        {
+          name: 'context2',
+          context: {
+            cluster: 'cluster2',
+            user: 'user2',
+          },
+        },
+      ],
+    }`;
+  kubeConfig.loadFromString(kubeconfigFileContent);
+  await contextsManager.update(kubeConfig);
+
+  vi.mocked(window.showInformationMessage).mockResolvedValue('Cancel');
+
+  await contextsManager.deleteContext('context1');
+
+  const fsScreenshot = vol.toJSON();
+  const kubeconfigFile = fsScreenshot['/path/to/kube/config'];
+  expect(kubeconfigFile).toEqual('{}');
 });
 
 test('deleteContext the current context asks for confirmation', async () => {
@@ -537,7 +606,11 @@ test('deleteContext the current context asks for confirmation', async () => {
   const kubeconfigFileNew = new KubeConfig();
   kubeconfigFileNew.loadFromString(kubeconfigFile ?? '');
   expect(kubeconfigFileNew.getContexts()).toHaveLength(2);
-  expect(window.showInformationMessage).toHaveBeenCalled();
+  expect(window.showInformationMessage).toHaveBeenCalledWith(
+    'Are you sure you want to delete context "context1"? This is the current context, you will need to switch to another context.',
+    'Yes',
+    'Cancel',
+  );
   expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
 });
 
