@@ -1,5 +1,7 @@
 {
   "name": "kubernetes-contexts-monorepo",
+  "repository": "https://github.com/podman-desktop/extension-kubernetes-contexts",
+  "homepage": "https://github.com/podman-desktop/extension-kubernetes-contexts#readme",
   "displayName": "Mono repository for Kubernetes Contexts extension for Podman Desktop",
   "description": "Root repository",
   "version": "0.3.0-next",
