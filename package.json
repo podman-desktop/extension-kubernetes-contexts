@@ -64,7 +64,7 @@
     "typescript": "5.9.3",
     "typescript-eslint": "^8.60.1",
     "vite": "^8.0.16",
-    "vitest": "^4"
+    "vitest": "^4.1.0"
   },
   "dependencies": {
     "isomorphic-ws": "^5.0.0"
