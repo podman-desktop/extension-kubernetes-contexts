@@ -20,8 +20,10 @@ exports[`'offline state' > offline state 1`] = `
    
   <div>
     <button
+      aria-busy="false"
+      aria-disabled="false"
       aria-label="Connect to context ctx-1"
-      class="relative px-4 py-[5px] box-border whitespace-nowrap select-none transition-all outline-transparent focus:outline-[var(--pd-button-primary-hover-bg)] bg-[var(--pd-button-primary-bg)] text-[var(--pd-button-text)] border-none hover:bg-[var(--pd-button-primary-hover-bg)] rounded-[4px] "
+      class="relative px-[16px] py-[5px] motion-reduce:transition-none min-h-[28px] min-w-[28px] leading-[15px] select-none bg-[var(--pd-button-primary-bg)] text-[var(--pd-button-primary-text)] border border-[var(--pd-button-primary-border)] hover:bg-[var(--pd-button-primary-hover-bg)] shadow-[0px_1px_4px_0px_rgba(0,0,0,0.1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--pd-button-focus-ring)] cursor-pointer rounded-[6px] "
       type="button"
     >
       <!---->
@@ -56,8 +58,10 @@ exports[`'unknown state' > unknown state 1`] = `
    
   <div>
     <button
+      aria-busy="false"
+      aria-disabled="false"
       aria-label="Connect to context ctx-1"
-      class="relative px-4 py-[5px] box-border whitespace-nowrap select-none transition-all outline-transparent focus:outline-[var(--pd-button-primary-hover-bg)] bg-[var(--pd-button-primary-bg)] text-[var(--pd-button-text)] border-none hover:bg-[var(--pd-button-primary-hover-bg)] rounded-[4px] "
+      class="relative px-[16px] py-[5px] motion-reduce:transition-none min-h-[28px] min-w-[28px] leading-[15px] select-none bg-[var(--pd-button-primary-bg)] text-[var(--pd-button-primary-text)] border border-[var(--pd-button-primary-border)] hover:bg-[var(--pd-button-primary-hover-bg)] shadow-[0px_1px_4px_0px_rgba(0,0,0,0.1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--pd-button-focus-ring)] cursor-pointer rounded-[6px] "
       type="button"
     >
       <!---->
@@ -92,8 +96,10 @@ exports[`'unreachable state' > unreachable state 1`] = `
    
   <div>
     <button
+      aria-busy="false"
+      aria-disabled="false"
       aria-label="Connect to context ctx-1"
-      class="relative px-4 py-[5px] box-border whitespace-nowrap select-none transition-all outline-transparent focus:outline-[var(--pd-button-primary-hover-bg)] bg-[var(--pd-button-primary-bg)] text-[var(--pd-button-text)] border-none hover:bg-[var(--pd-button-primary-hover-bg)] rounded-[4px] "
+      class="relative px-[16px] py-[5px] motion-reduce:transition-none min-h-[28px] min-w-[28px] leading-[15px] select-none bg-[var(--pd-button-primary-bg)] text-[var(--pd-button-primary-text)] border border-[var(--pd-button-primary-border)] hover:bg-[var(--pd-button-primary-hover-bg)] shadow-[0px_1px_4px_0px_rgba(0,0,0,0.1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--pd-button-focus-ring)] cursor-pointer rounded-[6px] "
       type="button"
     >
       <!---->
