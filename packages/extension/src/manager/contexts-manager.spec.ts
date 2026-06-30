@@ -209,7 +209,7 @@ describe('removeContext', () => {
         skipTLSVerify: false,
       },
     ]);
-    expect(newKubeConfig.getUsers().length).toEqual(1);
+    expect(newKubeConfig.getUsers()).toHaveLength(1);
     expect(newKubeConfig.getUsers()[0].name).toEqual('user2');
     expect(newKubeConfig.getCurrentContext()).toEqual('');
     expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
@@ -255,7 +255,7 @@ describe('removeContext', () => {
         skipTLSVerify: false,
       },
     ]);
-    expect(newKubeConfig.getUsers().length).toEqual(1);
+    expect(newKubeConfig.getUsers()).toHaveLength(1);
     expect(newKubeConfig.getUsers()[0].name).toEqual('user2');
     expect(newKubeConfig.getCurrentContext()).toEqual('context2');
     expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
@@ -310,7 +310,7 @@ describe('removeContext', () => {
         skipTLSVerify: false,
       },
     ]);
-    expect(newKubeConfig.getUsers().length).toEqual(2);
+    expect(newKubeConfig.getUsers()).toHaveLength(2);
     expect(newKubeConfig.getUsers()[0].name).toEqual('user2');
     expect(newKubeConfig.getUsers()[1].name).toEqual('user3');
     expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
@@ -348,7 +348,7 @@ describe('removeContext', () => {
         skipTLSVerify: false,
       },
     ]);
-    expect(newKubeConfig.getUsers().length).toEqual(1);
+    expect(newKubeConfig.getUsers()).toHaveLength(1);
     expect(newKubeConfig.getUsers()[0].name).toEqual('user1');
     expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('deleteContext');
   });
@@ -737,13 +737,13 @@ test('should duplicate context from config', async () => {
 
   await contextsManager.duplicateContext(kubeConfig.contexts[0].name);
   let contexts = contextsManager.getKubeConfig().getContexts();
-  expect(contexts.length).toBe(2);
+  expect(contexts).toHaveLength(2);
 
   expect(contexts[1].name).toBe('context1-1');
 
   await contextsManager.duplicateContext(kubeConfig.contexts[0].name);
   contexts = contextsManager.getKubeConfig().getContexts();
-  expect(contexts.length).toBe(3);
+  expect(contexts).toHaveLength(3);
   expect(contexts[2].name).toBe('context1-2');
   expect(telemetryLoggerMock.logUsage).toHaveBeenCalledWith('duplicateContext');
 });
@@ -795,7 +795,7 @@ test('should update context from config', async () => {
     user: 'user1',
   });
   const contexts = contextsManager.getKubeConfig().getContexts();
-  expect(contexts.length).toBe(1);
+  expect(contexts).toHaveLength(1);
 
   expect(contexts[0].name).toBe('context1-edited');
   expect(contexts[0].namespace).toBe('namespace-edited');
