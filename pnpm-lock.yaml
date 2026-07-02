@@ -255,8 +255,8 @@ importers:
         specifier: workspace:*
         version: link:../rpc
       '@podman-desktop/ui-svelte':
-        specifier: 1.27.2
-        version: 1.27.2(svelte-fa@4.0.4(svelte@5.56.4(@typescript-eslint/types@8.62.1)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))
+        specifier: 1.28.2
+        version: 1.28.2(svelte-fa@4.0.4(svelte@5.56.4(@typescript-eslint/types@8.62.1)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))
       '@podman-desktop/webview-api':
         specifier: 1.28.2
         version: 1.28.2
@@ -937,8 +937,8 @@ packages:
   '@podman-desktop/kubernetes-dashboard-extension-api@0.5.0':
     resolution: {integrity: sha512-XlyvBGo2iDGVFEVEzWSmHozoV4yopxRy4aLeGaGX5/V5OvYy8HLduaG/Rhnjb09m/fhdkKKWmCSct5Pi1HkfmQ==}
 
-  '@podman-desktop/ui-svelte@1.27.2':
-    resolution: {integrity: sha512-WUAL7vVzFkgzXPxqa/wsz/vZ9fflXYuMACnCBd0Qqh+p0q8Vph/OI3mE79dGUAQRMLflHcvXlQV1CFMV43qgqw==}
+  '@podman-desktop/ui-svelte@1.28.2':
+    resolution: {integrity: sha512-BONAC07WOpeD0nB5JoFNHTOWOQX298g8/6uvCImW+rs5013tdyAK3ymeOhCcUXdvz7bX8qbuAdhqY94G9msJxg==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
       svelte-fa: ^4.0.0
@@ -2686,8 +2686,8 @@ packages:
   html-escaper@2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
 
-  humanize-duration@3.33.2:
-    resolution: {integrity: sha512-K7Ny/ULO1hDm2nnhvAY+SJV1skxFb61fd073SG1IWJl+D44ULrruCuTyjHKjBVVcSuTlnY99DKtgEG39CM5QOQ==}
+  humanize-duration@3.34.0:
+    resolution: {integrity: sha512-NDxhYxiiRzsST6xULIHuYWRvsCtviJXRdjarhyWyh78S4Ou+MWhM2k4HQ+y7iegdrzreXe11isd0au1N2PB/pQ==}
 
   hyperdyperid@1.2.0:
     resolution: {integrity: sha512-Y93lCzHYgGWdrJ66yIktxiaGULYc6oGiABxhcO5AufBeOyoIdZF7bIfLaOrbM0iGIOXQQgxxRrFEnb+Y6w1n4A==}
@@ -4899,14 +4899,14 @@ snapshots:
 
   '@podman-desktop/kubernetes-dashboard-extension-api@0.5.0': {}
 
-  '@podman-desktop/ui-svelte@1.27.2(svelte-fa@4.0.4(svelte@5.56.4(@typescript-eslint/types@8.62.1)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))':
+  '@podman-desktop/ui-svelte@1.28.2(svelte-fa@4.0.4(svelte@5.56.4(@typescript-eslint/types@8.62.1)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))':
     dependencies:
       '@floating-ui/dom': 1.7.6
       '@fortawesome/fontawesome-free': 7.3.0
       '@fortawesome/free-brands-svg-icons': 7.3.0
       '@fortawesome/free-regular-svg-icons': 7.3.0
       '@fortawesome/free-solid-svg-icons': 7.3.0
-      humanize-duration: 3.33.2
+      humanize-duration: 3.34.0
       moment: 2.30.1
       svelte: 5.56.4(@typescript-eslint/types@8.62.1)
       svelte-fa: 4.0.4(svelte@5.56.4(@typescript-eslint/types@8.62.1))
@@ -6788,7 +6788,7 @@ snapshots:
 
   html-escaper@2.0.2: {}
 
-  humanize-duration@3.33.2: {}
+  humanize-duration@3.34.0: {}
 
   hyperdyperid@1.2.0: {}
 
