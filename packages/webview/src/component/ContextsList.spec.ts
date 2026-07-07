@@ -121,6 +121,7 @@ test('ContextCardLine should render cards when available contexts', () => {
     namespace: 'test-namespace-1',
     currentContext: true,
     icon: kubernetesIconBase64,
+    // eslint-disable-next-line vitest/valid-expect
     onEdit: expect.any(Function),
   });
   expect(ContextCard).toHaveBeenCalledWith(expect.anything(), {
@@ -136,6 +137,7 @@ test('ContextCardLine should render cards when available contexts', () => {
     namespace: undefined,
     currentContext: false,
     icon: kubernetesIconBase64,
+    // eslint-disable-next-line vitest/valid-expect
     onEdit: expect.any(Function),
   });
   expect(uiSvelte.EmptyScreen).not.toHaveBeenCalled();
