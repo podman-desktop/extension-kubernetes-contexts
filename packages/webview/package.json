@@ -17,7 +17,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
-    "inversify": "^8.2.0",
+    "inversify": "^8.2.1",
     "svelte-preprocess": "^6.0.5"
   },
   "devDependencies": {
