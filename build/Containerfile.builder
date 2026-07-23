@@ -34,5 +34,5 @@ COPY --chown=1001:root pnpm-workspace.yaml /opt/app-root/extension-source/
 COPY --chown=1001:root packages/webview/package.json /opt/app-root/extension-source/packages/webview/package.json
 COPY --chown=1001:root packages/extension/package.json /opt/app-root/extension-source/packages/extension/package.json
 
-RUN npm install --global pnpm@11.16.0 && \
+RUN corepack enable && corepack install && \
     CI=true pnpm --frozen-lockfile install
