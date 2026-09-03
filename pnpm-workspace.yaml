@@ -26,6 +26,7 @@ overrides:
   fast-uri@>=3.0.0 <3.1.5: '>=3.1.5 <4'
   js-yaml@>=4.0.0 <4.3.1: '>=4.3.1 <5'
   js-yaml@>=5.0.0 <5.3.0: '>=5.3.0'
+  browserslist@<=4.28.6: '>=4.28.7'
 nodeLinker: hoisted
 allowBuilds:
   esbuild: true
