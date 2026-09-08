@@ -201,7 +201,8 @@ describe('UpdateContext', () => {
 
     await userEvent.clear(contextName);
 
-    await expect(screen.findByText('Please enter a value')).resolves.toBeInTheDocument();
+    const field = await screen.findByText('Please enter a value');
+    expect(field).toBeInTheDocument();
   });
 
   test('dropdown value should match users', async () => {

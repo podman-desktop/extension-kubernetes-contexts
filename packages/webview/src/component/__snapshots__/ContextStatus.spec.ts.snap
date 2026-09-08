@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`'offline state' > offline state 1`] = `
+exports[`offline state > offline state 1`] = `
 <div>
   <div
     class="flex flex-row pt-2"
@@ -38,7 +38,7 @@ exports[`'offline state' > offline state 1`] = `
 </div>
 `;
 
-exports[`'unknown state' > unknown state 1`] = `
+exports[`unknown state > unknown state 1`] = `
 <div>
   <div
     class="flex flex-row pt-2"
@@ -76,7 +76,7 @@ exports[`'unknown state' > unknown state 1`] = `
 </div>
 `;
 
-exports[`'unreachable state' > unreachable state 1`] = `
+exports[`unreachable state > unreachable state 1`] = `
 <div>
   <div
     class="flex flex-row pt-2"
