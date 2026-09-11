@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2025 Red Hat, Inc.
+# Copyright (C) 2025 - 2026 Red Hat, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,9 +19,6 @@ name: build and publish next image
 
 permissions:
   contents: read
-  packages: write
-  attestations: write
-  id-token: write
 
 on:
   workflow_dispatch:
@@ -32,7 +29,7 @@ on:
 jobs:
   extension-build:
     name: build oci image
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     outputs:
       artifact-id: ${{ steps.build.outputs.artifact-id }}
     steps:
@@ -45,7 +42,7 @@ jobs:
   extension-publish:
     name: publish oci image
     needs: extension-build
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
       id-token: write

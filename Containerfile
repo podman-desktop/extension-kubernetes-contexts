@@ -29,7 +29,7 @@ WORKDIR /opt/app-root/extension-source
 COPY --chown=1001:root . .
 
 RUN corepack install && \
-    CI=true pnpm --frozen-lockfile install && \
+    CI=true pnpm install && \
     pnpm build
 
 RUN mkdir /opt/app-root/extension && \
