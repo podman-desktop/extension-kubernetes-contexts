@@ -4,8 +4,8 @@
 
 Kubernetes Contexts is an open source extension for Podman Desktop to manage Kubernetes contexts.
 
-The extension displays the list of Kubernetes Contexts defined in your kubeconfig file. This kubeconfig file can be 
-configured through the preference `Kubernetes > Kubeconfig`. 
+The extension displays the list of Kubernetes Contexts defined in your kubeconfig file. This kubeconfig file can be
+configured through the preference `Kubernetes > Kubeconfig`.
 
 ## Operations on existing contexts
 
@@ -58,3 +58,9 @@ You can now make changes to the sources. The project is composed of two parts, w
 > Note that when you only change code in the webview part, the webview is built, and the result is included in the extension, which triggers the rebuild of the extension.
 
 After each change, you may have to restart the extension from the `Extensions > Local Extensions` page.
+
+## End-to-end tests
+
+The [e2e workflow](.github/workflows/e2e-tests.yaml) builds this repository's extension, pulls the Kubernetes Dashboard `0.6.0` OCI image, and installs both plugins in an isolated Podman Desktop profile. The suite stops Dashboard, restarts Contexts, and tests context management. It then starts Dashboard in the same session and checks health, resource counts, and permissions against an `envtest` Kubernetes API server. The import case is temporarily skipped because its native file-dialog mock does not work with the CI runner.
+
+The suite is in [tests/playwright](tests/playwright). It uses generated kubeconfig files and resources from [the cluster fixture](tests/resources/cluster-fixtures.yaml). The workflow publishes Playwright reports and traces as artifacts, including on failure.

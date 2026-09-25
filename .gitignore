@@ -6,4 +6,6 @@ dist
 .idea
 output
 packages/extension/media
-
+.pnpm-store/
+tests/playwright/tests/
+tests/playwright/output/
