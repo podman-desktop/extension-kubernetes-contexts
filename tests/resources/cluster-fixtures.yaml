@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: contexts-e2e-pod
+  namespace: default
+spec:
+  containers:
+    - name: pause
+      image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contexts-e2e-deployment
+  namespace: default
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: contexts-e2e-deployment
+  template:
+    metadata:
+      labels:
+        app: contexts-e2e-deployment
+    spec:
+      containers:
+        - name: pause
+          image: registry.k8s.io/pause:3.9
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: contexts-e2e-pod-reader
+  namespace: default
+rules:
+  - apiGroups: ['']
+    resources: [pods]
+    verbs: [get, list, watch]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: contexts-e2e-pod-reader
+  namespace: default
+subjects:
+  - kind: User
+    name: user1
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: contexts-e2e-pod-reader
+  apiGroup: rbac.authorization.k8s.io
