@@ -155,8 +155,8 @@ importers:
         specifier: ^8.2.3
         version: 8.2.3(reflect-metadata@0.2.2)
       js-yaml:
-        specifier: ^5.4.2
-        version: 5.4.2
+        specifier: ^5.4.3
+        version: 5.4.3
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -633,15 +633,6 @@ packages:
   '@eslint/plugin-kit@0.7.3':
     resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
-
-  '@exodus/bytes@1.15.1':
-    resolution: {integrity: sha512-S6mL0yNB/Abt9Ei4tq8gDhcczc4S3+vQ4ra7vxnAf+YHC02srtqxKKZghx2Dq6p0e66THKwR6r8N6P95wEty7Q==}
-    engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
-    peerDependencies:
-      '@noble/hashes': ^1.8.0 || ^2.0.0
-    peerDependenciesMeta:
-      '@noble/hashes':
-        optional: true
 
   '@exodus/bytes@1.16.0':
     resolution: {integrity: sha512-IcpW84uEn3N7ETtNZMlxKhfl6Pec8rUNGOTBtWbK1FKhJxIFAptZyVrvVRVBimAJxJCgc3PxepxkdWWG4DVzfA==}
@@ -2629,8 +2620,8 @@ packages:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
 
-  js-yaml@5.4.2:
-    resolution: {integrity: sha512-m+aqu+LwO1O6sIopafj8HUVl5aawITwZQe/yHpMCKjaWBaA/d07B/QdMb3529REftiU+RMMHL3Vlsw3hON7vWg==}
+  js-yaml@5.4.3:
+    resolution: {integrity: sha512-yzzNtgczwgoVHNigCyKTXcQJU4Y8t/ikU4UxXW0BvrLfHTGWZhsNcOT2s/a7vn81/4KqVnNmHjaUEPlvWnNwVw==}
     hasBin: true
 
   jsdom@30.1.2:
@@ -4185,8 +4176,6 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@exodus/bytes@1.15.1': {}
-
   '@exodus/bytes@1.16.0': {}
 
   '@floating-ui/core@1.8.0':
@@ -4437,7 +4426,7 @@ snapshots:
       form-data: 4.0.6
       hpagent: 1.2.0
       isomorphic-ws: 5.0.0(ws@8.21.3)
-      js-yaml: 5.4.2
+      js-yaml: 5.4.3
       jsonpath-plus: 10.4.0
       openid-client: 6.8.5
       rfc4648: 1.5.4
@@ -6110,7 +6099,7 @@ snapshots:
 
   html-encoding-sniffer@7.0.0:
     dependencies:
-      '@exodus/bytes': 1.15.1
+      '@exodus/bytes': 1.16.0
     transitivePeerDependencies:
       - '@noble/hashes'
 
@@ -6305,7 +6294,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  js-yaml@5.4.2:
+  js-yaml@5.4.3:
     dependencies:
       argparse: 2.0.1
 
