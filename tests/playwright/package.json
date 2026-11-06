@@ -6,7 +6,7 @@
     "test:e2e:integration": "xvfb-maybe --auto-servernum -- npx playwright test src/ --grep @integration"
   },
   "devDependencies": {
-    "@kubernetes/client-node": "^2.0.0",
+    "@kubernetes/client-node": "^2.0.2",
     "@playwright/test": "^1.64.1",
     "@podman-desktop/tests-playwright": "1.31.0-next.202611021239-2eee38a",
     "@types/node": "^24",
