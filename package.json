@@ -41,7 +41,7 @@
     "@tsconfig/strictest": "^2.0.6",
     "@typescript-eslint/eslint-plugin": "^8.72.1",
     "@typescript-eslint/parser": "^8.72.1",
-    "@vitest/coverage-v8": "^5.0.5",
+    "@vitest/coverage-v8": "^5.1.0",
     "@vitest/eslint-plugin": "^1.6.28",
     "autoprefixer": "^10.6.2",
     "concurrently": "^10.0.6",
@@ -65,7 +65,7 @@
     "typescript": "5.9.3",
     "typescript-eslint": "^8.72.1",
     "vite": "^8.3.5",
-    "vitest": "^5.0.5"
+    "vitest": "^5.1.0"
   },
   "dependencies": {
     "isomorphic-ws": "^5.0.0"
