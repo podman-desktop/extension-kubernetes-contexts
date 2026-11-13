@@ -495,8 +495,8 @@ importers:
         specifier: ^1.65.0
         version: 1.65.0
       '@podman-desktop/tests-playwright':
-        specifier: 1.31.0-next.202611062242-87d0302
-        version: 1.31.0-next.202611062242-87d0302
+        specifier: 1.31.0-next.202611092032-abcafd5
+        version: 1.31.0-next.202611092032-abcafd5
       '@types/node':
         specifier: ^24
         version: 24.19.2
@@ -1057,8 +1057,8 @@ packages:
   '@podman-desktop/kubernetes-dashboard-extension-api@0.6.0':
     resolution: {integrity: sha512-ePJfVN5Wa4cZ6RiKYYBH6pSBvzbfanMW5C0P7wTe3g1dE2YWdl9OGVfj5rqq8fQxIITaaBRc6Klgp9vrjsaZcQ==}
 
-  '@podman-desktop/tests-playwright@1.31.0-next.202611062242-87d0302':
-    resolution: {integrity: sha512-kbNP4GKpFbWsPDGU/lJE94EF53Fm2luMDkuiBMXJWgAYegtg+NkrDYUqiX8ngMbo37w4WUKhmHEy0GGDCLKt2g==}
+  '@podman-desktop/tests-playwright@1.31.0-next.202611092032-abcafd5':
+    resolution: {integrity: sha512-/6YxZrd03YVQhmsd9CjxaXOEIZsSJijKE4Pgvebj9Y7/WlK3/7Ty5XgCXfRxr+HoJW5j6KIfcKqzcRdNzpg+dg==}
 
   '@podman-desktop/ui-svelte@1.30.5':
     resolution: {integrity: sha512-gJiXt7bQhEoNAwy6fi8dXZ9zr6WQVr6XGxlZrKl6LluL/nBcUCApjbbEZC+ws4icSoabSkrpCtN4p6VtvtTX9g==}
@@ -4550,7 +4550,7 @@ snapshots:
 
   '@podman-desktop/kubernetes-dashboard-extension-api@0.6.0': {}
 
-  '@podman-desktop/tests-playwright@1.31.0-next.202611062242-87d0302': {}
+  '@podman-desktop/tests-playwright@1.31.0-next.202611092032-abcafd5': {}
 
   '@podman-desktop/ui-svelte@1.30.5(svelte-fa@4.0.4(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(svelte@5.57.3(@typescript-eslint/types@8.72.1))':
     dependencies:
